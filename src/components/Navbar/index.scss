@@ -1,0 +1,41 @@
+.navbar {
+    background: rgba(17, 17, 17, 0.5);
+    backdrop-filter: blur(2px);
+    position: fixed;
+    width: 100%;
+    /* Note: backdrop-filter has minimal browser support */
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 60px;
+    }
+
+    &__brand {
+        padding: .25rem;
+
+        a {
+            font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.125rem;
+            color: #FFFFFF;
+        }
+    }
+    
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1.5rem;
+
+        a {
+            font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+            font-style: normal;
+            font-size: 1.125rem;
+            font-weight: 300;
+            color: #FFFFFF;
+        }
+    }
+}
