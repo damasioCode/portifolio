@@ -4,12 +4,12 @@ const BannerComponent = () => {
     return (
         <section className='banner'>
             <div className='banner__block container'>
-                <p>Hi there! 🤙</p>
-                <h1 className='spacing'>I am Dan Damasio.</h1>
-                <h1>I develop things.</h1>
-                <p className='spacing'>Backend focused creative developer.</p>
-                <p>I ❤️ what i do, i value good practices and clean code.</p>
-                <a href="#" className='button__primary spacing'>Hire Me</a>
+                <p>Eai! 🤙</p>
+                <h1 className='spacing'>Eu sou Daniel Damasio.</h1>
+                <h1>Desenvolvo coisas pela web.</h1>
+                <p className='spacing'>Desenvolvedor Backend focado na criatividade.</p>
+                <p>Eu ❤️ o que faço, valoriso boas práticas e código limpo.</p>
+                <a href="#" className='button__primary spacing'>Entre em contato</a>
             </div>
         </section>
     )

@@ -5,6 +5,23 @@
     width: 100%;
     /* Note: backdrop-filter has minimal browser support */
 
+    &.active {
+        .navbar {
+            &__button::after {
+                transition: .3s all ease-in;
+                opacity: 0;
+                left: 10px;
+                bottom: -50%;
+            }
+
+            &__menu {
+                visibility: visible;
+                left: 0;
+            }
+        }
+
+    }
+
     &__wrapper {
         display: flex;
         justify-content: space-between;
@@ -14,6 +31,8 @@
 
     &__brand {
         padding: .25rem;
+        position: relative;
+        z-index: 100000000;
 
         a {
             font-family: 'Montserrat', Arial, Helvetica, sans-serif;
@@ -26,6 +45,8 @@
     
     &__menu {
         display: flex;
+        position: relative;
+        z-index: 100000000;
         justify-content: space-between;
         align-items: center;
         gap: 1.5rem;
@@ -36,6 +57,70 @@
             font-size: 1.125rem;
             font-weight: 300;
             color: #FFFFFF;
+        }
+
+        
+
+        @media (max-width: 768px) {
+            position: absolute;
+            padding: 0 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            top: 0;
+            padding-top: 60px;
+            left: 100%;
+            background: rgba(17, 17, 17, 1);
+            backdrop-filter: blur(2px);
+            width: 100vw;
+            height: 100dvh;
+            transition: .6s;
+            z-index: 1000;
+            visibility: hidden;
+            
+
+            a {
+                font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+                font-style: normal;
+                font-size: 1.75rem;
+                font-weight: 300;
+                color: #FFFFFF;
+            }
+        }
+    }
+
+    &__button {
+        display: none;
+        position: relative;
+        z-index: 100000000;
+        
+        ::after {
+            content: '';
+            display: block;
+            width: 20px;
+            left: 10px;
+            height: 2px;
+            background-color: #D01543;
+            margin: .5rem 0;
+            transition: .3s;
+            position: relative;
+        }
+        
+        ::before {
+            content: '';
+            display: flex;
+            width: 30px;
+            height: 2px;
+            align-self: flex-start;
+            background-color: #D01543;
+            margin: .5rem 0;
+            transition: .3s;
+            position: relative;
+        }
+
+        @media (max-width: 768px) {
+            display: block;
         }
     }
 }
