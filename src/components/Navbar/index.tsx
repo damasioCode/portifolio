@@ -20,13 +20,13 @@ const NavComponent = () => {
                 </button>
                 <ul className='navbar__menu'>
                     <li>
-                        <a href="#">Sobre</a>
+                        <a href="#about" onClick={toggleMenu}>Sobre</a>
                     </li>
                     <li>
-                        <a href="#">Portifólio</a>
+                        <a href="#portifolio" onClick={toggleMenu}>Portifólio</a>
                     </li>
                     <li>
-                        <a href="#">Contato</a>
+                        <a href="#contact" onClick={toggleMenu}>Contato</a>
                     </li>
                 </ul>
             </div>

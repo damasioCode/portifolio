@@ -8,13 +8,13 @@ const FooterComponent = () => {
             <div className='footer__wrapper container'>
                 <ul className='footer__menu'>
                     <li>
-                        <a href="#">Sobre</a>
+                        <a href="#about">Sobre</a>
                     </li>
                     <li>
-                        <a href="#">Portifólio</a>
+                        <a href="#portifolio">Portifólio</a>
                     </li>
                     <li>
-                        <a href="#">Contato</a>
+                        <a href="#contact">Contato</a>
                     </li>
                 </ul>
                 <p className='footer__copy'>© {currentTime.getFullYear()} - Daniel Damasio</p>
