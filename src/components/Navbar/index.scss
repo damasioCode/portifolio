@@ -57,6 +57,11 @@
             font-size: 1.125rem;
             font-weight: 300;
             color: #FFFFFF;
+            transition: .2s all ease-in;
+
+            &:hover {
+                color: #D01543;
+            }
         }
 
         
@@ -75,7 +80,7 @@
             backdrop-filter: blur(2px);
             width: 100vw;
             height: 100dvh;
-            transition: .6s;
+            transition: .1s ease-out;
             z-index: 1000;
             visibility: hidden;
             

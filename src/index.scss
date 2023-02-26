@@ -27,6 +27,11 @@ button {
     background: none;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+}
+
 li {
     list-style: none;
 }
@@ -77,6 +82,100 @@ li {
             font-size: clamp(1rem, 3vw, 1.125rem);
             line-height: 22px;
             color: #FFFFFF;
+        }
+    }
+}
+
+.portifolio {
+    
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    &__title {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        margin-top: 2.5rem;
+        font-size: clamp(1.785rem, 4vw, 2.125rem);
+        line-height: 1.5;
+        color: #FFFFFF;
+        margin-bottom: 1.5rem;
+    }
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+        flex-wrap: wrap;
+
+        .content-1 {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            flex: 1 1 400px;
+        }
+        .content-2 {
+            flex: 1 1 368px;
+        }
+
+        &--title {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.5rem;
+            line-height: 1.5;
+            color: #FFFFFF;
+        }
+
+        &--description {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #FFFFFF;
+        }
+
+        &--description {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #FFFFFF;
+        }
+
+        &--link {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &--source,
+        &--preview {
+            display: flex;
+            justify-content: space-between;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 1rem;
+            line-height: 1.25;
+            color: #FFFFFF;
+            transition: .2s all ease-in;
+
+            &:hover {
+                color: #D01543;
+            }
+        }
+
+        &--imagem {
+            img {
+                border-radius: .25rem;
+            }
         }
     }
 }
