@@ -1,6 +1,7 @@
 import BannerComponent from './components/Banner'
 import NavComponent from './components/Navbar'
 import PortifolioItemComponent from './components/PortifolioItem'
+import FooterComponent from './components/Footer'
 
 function App() {
   return (
@@ -42,6 +43,16 @@ function App() {
 
         </article>
       </section>
+
+      <section className='contact'>
+        <article className='contact__wrapper container'>
+          <h1 className='contact__title'>Contato</h1>
+          <p>If you want to carry out a project or chat with me, do not hesitate to send me an email: <a href="mailto:damasio.dan7@gmail.com" className='contact__email'>damasio.dan7@gmail.com</a></p>
+          <a href="#" className='button__primary'>Contato</a>
+        </article>
+      </section>
+      <FooterComponent/>
+
     </div>
   )
 }

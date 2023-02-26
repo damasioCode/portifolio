@@ -25,9 +25,9 @@ const PortifolioItemComponent = ({
                 <h2 className='portifolio__item--title'>{title}</h2>
                 <p className='portifolio__item--description'>{description}</p>
                 <div className='portifolio__item--link'>
-                    <a href={sorce_code} target='_blank' className='portifolio__item--source'>Source code</a>
+                    <a href={sorce_code} target='_blank' className='portifolio__item--source'>Codigo fonte</a>
                     {live_preview ? ( 
-                        <a href={live_preview} target='_blank' className='portifolio__item--preview'>Live Preview</a> 
+                        <a href={live_preview} target='_blank' className='portifolio__item--preview'>Link de visualização</a> 
                     ) : ''}
                 </div>
             </div>

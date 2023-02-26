@@ -1,53 +1,93 @@
-.banner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100dvh;
-    background: radial-gradient(83.64% 84.43% at 94.03% 150.63%, rgba(188, 0, 47, 0.5) 0%, rgba(188, 0, 47, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(128.71% 133.07% at -12.88% -60.61%, rgba(188, 0, 47, 0.5) 0%, rgba(188, 0, 47, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
-    mix-blend-mode: normal;
+.portifolio {
+    
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+    }
 
-    &__block {
+    &__title {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        margin-top: 2.5rem;
+        font-size: clamp(1.785rem, 4vw, 2.125rem);
+        line-height: 1.5;
+        color: #FFFFFF;
+        margin-bottom: 1.5rem;
+    }
 
-        p {
-            font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+        flex-wrap: wrap;
+
+        .content-1 {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            flex: 1 1 400px;
+        }
+        .content-2 {
+            flex: 1 1 368px;
+        }
+
+        &--title {
+            font-family: 'Montserrat';
             font-style: normal;
-            font-weight: 500;
-            font-size: clamp(1rem, 3vw, 1.125rem);
+            font-weight: 400;
+            font-size: 1.5rem;
             line-height: 1.5;
             color: #FFFFFF;
         }
 
-        h1 {
-            font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+        &--description {
+            font-family: 'Montserrat';
             font-style: normal;
-            font-weight: 800;
-            font-size: clamp(1.75rem, 4vw, 3.0rem);
+            font-weight: 500;
+            font-size: 1rem;
+            line-height: 1.5;
             color: #FFFFFF;
-            line-height: 1.25;
         }
-        
-        .spacing {
-            margin-top: 1rem;
-        }
-    }
-}
 
-.button__primary {
-    display: inline-block;
-    background: linear-gradient(253.4deg, #D01543 -126.17%, rgba(186, 15, 36, 0) 88.67%);
-    border: 1px solid #D01543;
-    border-radius: 4px;
-    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 1.125rem;
-    padding: .75rem 3rem;
-    /* identical to box height */
-    color: #D01543;
-    transition: .3s all ease-in;
-    
-    &:hover {
-        background: #D01543;
-        color: #FFF
+        &--description {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #FFFFFF;
+        }
+
+        &--link {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &--source,
+        &--preview {
+            display: flex;
+            justify-content: space-between;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 1rem;
+            line-height: 1.25;
+            color: #FFFFFF;
+            transition: .2s all ease-in;
+
+            &:hover {
+                color: #D01543;
+            }
+        }
+
+        &--imagem {
+            img {
+                border-radius: .25rem;
+            }
+        }
     }
 }

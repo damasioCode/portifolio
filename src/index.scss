@@ -86,96 +86,32 @@ li {
     }
 }
 
-.portifolio {
-    
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 668px;
+
+    &__email {
+        color: #D01543;
+    }
+
     &__wrapper {
         display: flex;
+        text-align: center;
         flex-direction: column;
-        gap: 4rem;
+        align-items: center;
+        gap: 1.5rem;
+        max-width: 360px;
     }
 
     &__title {
         font-family: 'Montserrat';
         font-style: normal;
         font-weight: 700;
-        margin-top: 2.5rem;
-        font-size: clamp(1.785rem, 4vw, 2.125rem);
-        line-height: 1.5;
+        font-size: 36px;
+        line-height: 44px;
         color: #FFFFFF;
-        margin-bottom: 1.5rem;
     }
 
-    &__item {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 2rem;
-        flex-wrap: wrap;
-
-        .content-1 {
-            display: flex;
-            flex-direction: column;
-            gap: 2rem;
-            flex: 1 1 400px;
-        }
-        .content-2 {
-            flex: 1 1 368px;
-        }
-
-        &--title {
-            font-family: 'Montserrat';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 1.5rem;
-            line-height: 1.5;
-            color: #FFFFFF;
-        }
-
-        &--description {
-            font-family: 'Montserrat';
-            font-style: normal;
-            font-weight: 500;
-            font-size: 1rem;
-            line-height: 1.5;
-            color: #FFFFFF;
-        }
-
-        &--description {
-            font-family: 'Montserrat';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 1rem;
-            line-height: 1.5;
-            color: #FFFFFF;
-        }
-
-        &--link {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        &--source,
-        &--preview {
-            display: flex;
-            justify-content: space-between;
-            font-family: 'Montserrat';
-            font-style: normal;
-            font-weight: 600;
-            font-size: 1rem;
-            line-height: 1.25;
-            color: #FFFFFF;
-            transition: .2s all ease-in;
-
-            &:hover {
-                color: #D01543;
-            }
-        }
-
-        &--imagem {
-            img {
-                border-radius: .25rem;
-            }
-        }
-    }
 }
