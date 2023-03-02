@@ -27,7 +27,7 @@ const PortifolioItemComponent = ({
                 <div className='portifolio__item--link'>
                     <a href={sorce_code} target='_blank' className='portifolio__item--source'>Codigo fonte</a>
                     {live_preview ? ( 
-                        <a href={live_preview} target='_blank' className='portifolio__item--preview'>Link de visualização</a> 
+                        <a href={live_preview} target='_blank' className='portifolio__item--preview'>Vizualizar</a> 
                     ) : ''}
                 </div>
             </div>

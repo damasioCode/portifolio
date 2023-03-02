@@ -3,7 +3,8 @@ import NavComponent from "./components/Navbar";
 import PortifolioItemComponent from "./components/PortifolioItem";
 import FooterComponent from "./components/Footer";
 
-import ProjectImage1 from './assets/project_1.png';
+import ProjectImage1 from './assets/projects/project_1.png';
+import CVDocument from './assets/cv/cv_daniel_damasio.pdf';
 
 function App() {
     return (
@@ -20,25 +21,19 @@ function App() {
                             Sou um desenvolvedor apaixonado por codificação, plataforma web e
                             opensource.
                         </p>
+                        <p> Formado em Desenvolvimento de Sistemas (Técnico) pela escola
+                            Centro Paula Souza. Tenho mais de 3 anos de experiência na área.
+                        </p>
                         <p>
                             Auto-didata e um eterno estudante. Adoro criar e contribuir em
                             projetos, pois, isto me ajuda a evoluir e me desenvolver
                             profissionalmente.
+                        </p>     
+                        <p>
+                            Sou dedicado e focado na qualidade, amante de novos desafios. 
                         </p>
                         <p>
-                            Minha paixão por tecnologia existe desde a minha infância.
-                            Computadores, dispositivos eletrônicos sempre prenderam minha
-                            atenção.
-                        </p>
-                        <p>
-                            Sou formado em Desenvolvimento de Sistemas (Técnico) pela escola
-                            Centro Paula Souza. Aprendi de tudo um pouco sobre Frontend e
-                            Backend.
-                        </p>
-                        <p>
-                            Adoro ajudar pessoas que estão começando na área. Esportes,
-                            videogames, músicas e estudos são assuntos que me interessam
-                            muito.
+                            Adoro ajudar pessoas que estão começando na área e tenho muita facilidade com trabalho em equipe. 
                         </p>
                         <p>
                             Vejo estar no caminho certo pois dou meu melhor todos os dias.
@@ -68,13 +63,12 @@ function App() {
                 <article className="contact__wrapper container">
                     <h1 className="contact__title">Contato</h1>
                     <p>
-                        Se você quiser entrar em contato não hesite em mandar um email:
-                        <a href="mailto:damasio.dan7@gmail.com" className="contact__email">
+                        Se você quiser entrar em contato não hesite em mandar um email: <a href="mailto:damasio.dan7@gmail.com" className="contact__email">
                             damasio.dan7@gmail.com
                         </a>
                     </p>
-                    <a href="#" className="button__primary">
-                        Contato
+                    <a href={CVDocument} download className="button__primary">
+                        Baixar CV
                     </a>
                 </article>
             </section>
